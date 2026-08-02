@@ -27,6 +27,7 @@ const siteData = {
     { label: "Gallery", href: "#gallery" },
     { label: "Certifications", href: "#certifications" },
     { label: "Team", href: "#team" },
+    { label: "Careers", href: "/careers" },
     { label: "Contact", href: "#contact" }
   ],
 
@@ -183,6 +184,113 @@ const siteData = {
       { name: "G N Ramakrishna", role: "Founder", photo: "/images/founder-ramakrishna.jpg" },
       { name: "G R. Raghu", role: "Director", photo: "/images/director-raghu.jpg" },
       { name: "G R. Balaji", role: "Director", photo: "/images/director-balaji.jpg" }
+    ]
+  },
+
+  careers: {
+    heading: "Careers",
+    highlight: "Karnataka",
+    intro: "We're always looking for reliable, hard-working people to join our team. Explore current openings below.",
+    branch: "Tumkur — Karnataka",
+    email: "balaji.branch@gmail.com",
+    whatsapp: "919448275233",
+    whatsappDisplay: "+91 94482 75233",
+    roles: [
+      {
+        slug: "drivers",
+        title: "Drivers",
+        summary:
+          "Licensed heavy-vehicle and trailer drivers for long-haul and intra-state steel logistics routes.",
+        requirements: [
+          { label: "Vehicle Type", value: "12 / 14 / 16 / 18 / 20-Wheeler Trailers" },
+          { label: "Age", value: "21 – 58 years" },
+          { label: "Licence", value: "Valid Heavy Motor Vehicle (HMV) Driving Licence" },
+          { label: "Experience", value: "2+ years driving heavy trailers / steel cargo preferred" }
+        ],
+        documents: [
+          "Driving Licence (Heavy Vehicle)",
+          "Aadhaar Card",
+          "PAN Card",
+          "Address Proof",
+          "Recent Passport-Size Photo"
+        ]
+      },
+      {
+        slug: "crane-hydra-operators",
+        title: "Crane & Hydra Operators",
+        summary:
+          "Experienced operators for heavy cranes, hydra cranes and forklifts across our branches.",
+        requirements: [
+          { label: "Equipment Type", value: "Heavy Cranes (30–100mt), Hydra Cranes, Forklifts" },
+          { label: "Age", value: "21 – 55 years" },
+          { label: "Licence", value: "Valid Crane / Hydra Operator Licence" },
+          { label: "Experience", value: "2+ years operating heavy-lift equipment preferred" }
+        ],
+        documents: [
+          "Crane / Hydra Operator Licence",
+          "Aadhaar Card",
+          "PAN Card",
+          "Address Proof",
+          "Recent Passport-Size Photo"
+        ]
+      },
+      {
+        slug: "logistics-dispatch",
+        title: "Logistics & Dispatch",
+        summary:
+          "Coordinators to plan routes, track shipments and keep rake and road movements on schedule.",
+        requirements: [
+          { label: "Qualification", value: "Graduate / Diploma in Logistics or related field preferred" },
+          { label: "Age", value: "21 – 45 years" },
+          { label: "Skills", value: "Route planning, GPS tracking tools, MS Excel" },
+          { label: "Experience", value: "1+ years in logistics / dispatch coordination preferred" }
+        ],
+        documents: [
+          "Educational Certificates",
+          "Aadhaar Card",
+          "PAN Card",
+          "Address Proof",
+          "Recent Passport-Size Photo"
+        ]
+      },
+      {
+        slug: "branch-office-staff",
+        title: "Branch & Office Staff",
+        summary:
+          "Admin, accounts and customer-facing roles supporting our branches across Karnataka.",
+        requirements: [
+          { label: "Qualification", value: "PUC / Graduate; basic computer knowledge" },
+          { label: "Age", value: "20 – 45 years" },
+          { label: "Skills", value: "Communication, record-keeping, customer coordination" },
+          { label: "Experience", value: "Freshers welcome; prior admin/accounts experience a plus" }
+        ],
+        documents: [
+          "Educational Certificates",
+          "Aadhaar Card",
+          "PAN Card",
+          "Address Proof",
+          "Recent Passport-Size Photo"
+        ]
+      },
+      {
+        slug: "vehicle-maintenance",
+        title: "Vehicle Maintenance",
+        summary:
+          "Mechanics and technicians for preventive maintenance, repairs and pre-trip inspections across our trailer and crane fleet.",
+        requirements: [
+          { label: "Vehicle Type", value: "Heavy Trailers, Cranes & Hydra Vehicles" },
+          { label: "Age", value: "21 – 55 years" },
+          { label: "Qualification", value: "ITI / Diploma in Automobile or Mechanical (or equivalent experience)" },
+          { label: "Experience", value: "2+ years heavy-vehicle maintenance & repair preferred" }
+        ],
+        documents: [
+          "ITI / Diploma Certificate (if applicable)",
+          "Aadhaar Card",
+          "PAN Card",
+          "Address Proof",
+          "Recent Passport-Size Photo"
+        ]
+      }
     ]
   },
 

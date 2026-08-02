@@ -1,5 +1,9 @@
 /** Footer — logo, quick links, copyright line. */
-export default function Footer({ brand, links }) {
+export default function Footer({ brand, links, basePath = "" }) {
+  function resolveHref(href) {
+    return href.startsWith("#") ? `${basePath}${href}` : href;
+  }
+
   return (
     <footer className="footerParentNode">
       <div className="footer__inner">
@@ -10,7 +14,7 @@ export default function Footer({ brand, links }) {
 
         <nav className="footer__links">
           {links.map((item) => (
-            <a key={item.href} href={item.href}>
+            <a key={item.href} href={resolveHref(item.href)}>
               {item.label}
             </a>
           ))}

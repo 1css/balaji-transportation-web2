@@ -7,9 +7,17 @@ import { useEffect, useState } from "react";
  *  - scrolled: has the user scrolled down? (used to give the navbar a
  *    solid background instead of a transparent one over the hero image)
  */
-export default function Navbar({ brand, links }) {
+export default function Navbar({ brand, links, basePath = "" }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  // On the homepage, "#about" scrolls to the section on the current page.
+  // On any other page (e.g. /careers), it needs to be "/#about" so it
+  // takes the visitor back to the homepage first. Only anchor links are
+  // rewritten — regular page links like "/careers" pass through as-is.
+  function resolveHref(href) {
+    return href.startsWith("#") ? `${basePath}${href}` : href;
+  }
 
   useEffect(() => {
     function checkScrollPosition() {
@@ -28,7 +36,7 @@ export default function Navbar({ brand, links }) {
   return (
     <header className={`navbarParentNode ${scrolled ? "navbarParentNode--scrolled" : ""}`}>
       <div className="navbarParentNode__inner">
-        <a href="#hero" className="navbarParentNode__brand">
+        <a href={resolveHref("#hero")} className="navbarParentNode__brand">
           <img src={brand.emblem} alt="" className="navbarParentNode__emblem" />
           <span className="navbarParentNode__brandText">
             {brand.shortName}
@@ -38,11 +46,11 @@ export default function Navbar({ brand, links }) {
 
         <nav className={`navbarParentNode__links ${menuOpen ? "navbarParentNode__links--open" : ""}`}>
           {links.map((item) => (
-            <a key={item.href} href={item.href} className="navbarParentNode__link" onClick={closeMenu}>
+            <a key={item.href} href={resolveHref(item.href)} className="navbarParentNode__link" onClick={closeMenu}>
               {item.label}
             </a>
           ))}
-          <a href="#contact" className="navbarParentNode__cta" onClick={closeMenu}>
+          <a href={resolveHref("#contact")} className="navbarParentNode__cta" onClick={closeMenu}>
             Get a Quote
           </a>
         </nav>

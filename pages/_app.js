@@ -23,6 +23,7 @@ import "../components/Home/sections/Team.css";
 import "../components/Home/sections/Contact.css";
 import "../components/Home/sections/Footer.css";
 import "../components/Home/sections/Lightbox.css";
+import "../components/Careers/Careers.css";
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
