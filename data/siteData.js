@@ -146,7 +146,7 @@ const siteData = {
     heading: "Operations",
     highlight: "Gallery",
     images: [
-      { src: "/images/gallery-1.jpg", alt: "Loaded trailer with steel coils" },
+      // { src: "/images/gallery-1.jpg", alt: "Loaded trailer with steel coils" },
       { src: "/images/gallery-2.jpg", alt: "Steel coil loaded on a trailer" },
       {
         src: "/images/gallery-3.jpg",
