@@ -64,7 +64,7 @@ const siteData = {
       },
       {
         eyebrow: "300+ Trucks & Trailers · 50+ Cranes",
-        title: ". 30,000 sq.ft. Round-the-Clock Operations.",
+        title: "30,000 sq.ft. Round-the-Clock Operations.",
         subtitle:
           "Real-time tracking, dedicated security, and scalable warehousing — engineered to move steel and heavy cargo safely across Karnataka.",
         image: "/images/gallery-8.jpg",
