@@ -3,16 +3,22 @@ import Reveal from "../Home/Reveal";
 
 /** CareersDetail — /careers/[slug] page for a single role. */
 export default function CareersDetail({ careers, role }) {
+  // Each role can define its own contact details. Fall back to the
+  // shared careers contact if a role doesn't specify one.
+  const roleEmail = role.email || careers.email;
+  const rolePhone = role.phone || careers.whatsapp;
+  const rolePhoneDisplay = role.phoneDisplay || careers.whatsappDisplay;
+
   const mailSubject = encodeURIComponent(`Job Application — ${role.title}`);
   const mailBody = encodeURIComponent(
     `Hi Balaji Transports,\n\nI'm interested in the ${role.title} position. Please find my CV attached.\n\nThank you.`
   );
-  const mailtoHref = `mailto:${careers.email}?subject=${mailSubject}&body=${mailBody}`;
+  const mailtoHref = `mailto:${roleEmail}?subject=${mailSubject}&body=${mailBody}`;
 
   const whatsappText = encodeURIComponent(
     `Hi Balaji Transports, I'm interested in the ${role.title} position and would like to share my CV.`
   );
-  const whatsappHref = `https://wa.me/${careers.whatsapp}?text=${whatsappText}`;
+  const whatsappHref = `https://wa.me/${rolePhone}?text=${whatsappText}`;
 
   return (
     <div className="careersParentNode">
@@ -75,10 +81,10 @@ export default function CareersDetail({ careers, role }) {
           </div>
           <div className="applyBlock__meta">
             <span>
-              Email: <a href={`mailto:${careers.email}`}>{careers.email}</a>
+              Email: <a href={`mailto:${roleEmail}`}>{roleEmail}</a>
             </span>
             <span>
-              WhatsApp: <a href={whatsappHref} target="_blank" rel="noreferrer">{careers.whatsappDisplay}</a>
+              Phone / WhatsApp: <a href={whatsappHref} target="_blank" rel="noreferrer">{rolePhoneDisplay}</a>
             </span>
           </div>
         </Reveal>
