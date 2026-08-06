@@ -24,6 +24,7 @@
   line-height: 1.75;
   margin: 0 0 16px;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .aboutParentNode .about__mapWrap {
@@ -34,9 +35,11 @@
 }
 
 .aboutParentNode .about__map {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: var(--bms-navy);
   transition: transform 0.5s ease;
 }
 
@@ -76,6 +79,7 @@
   color: #d7e0e8;
   line-height: 1.7;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 /* ---------- responsive ---------- */

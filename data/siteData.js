@@ -81,6 +81,7 @@ const siteData = {
       "By channeling the power of private railway sidings, we are facilitating seamless cargo movement and reducing transportation costs. In response to the dynamic economic environment and rapid urbanization around Bengaluru, we have engineered a transformative approach.",
     ],
     image: "/images/route-map.jpg",
+    video: "/aboutpage_video.mp4",
     vision: {
       title: "Our Vision",
       text: "Operating around the clock, we ensure a secure environment with dedicated security measures. Our facilities include ample truck parking space, well-equipped drivers' restrooms, and a convenient canteen, catering to the diverse needs of our workforce and visitors.",
@@ -119,10 +120,12 @@ const siteData = {
       },
       {
         src: "/images/railway-track.jpg",
+        src: "/images/railway-track2.png",
         alt: "Newly laid railway track at the siding",
       },
       {
-        src: "/images/aerial-road-rail.jpg",
+        // src: "/images/aerial-road-rail.jpg",
+        src: "/images/road_rail.png",
         alt: "Aerial view of road and rail infrastructure",
       },
     ],
@@ -230,8 +233,8 @@ const siteData = {
       "We're always looking for reliable, hard-working people to join our team. Explore current openings below.",
     branch: "Tumkur — Karnataka",
     email: "balaji.branch@gmail.com",
-    whatsapp: "9900909038",
-    whatsappDisplay: "+91 9900909038",
+    whatsapp: "8310585629",
+    whatsappDisplay: "+91 8310585629",
     roles: [
       {
         slug: "drivers",
@@ -239,8 +242,8 @@ const siteData = {
         summary:
           "Licensed heavy-vehicle and trailer drivers for long-haul and intra-state steel logistics routes.",
         email: "hr.drivers@balajitransports.com", // TODO: replace with real contact
-        phone: "9900909038", // TODO: replace with real contact
-        phoneDisplay: "+91 9900909038",
+        phone: "8310585629", // TODO: replace with real contact
+        phoneDisplay: "+91 8310585629",
         requirements: [
           {
             label: "Vehicle Type",
@@ -298,8 +301,8 @@ const siteData = {
         summary:
           "Coordinators to plan routes, track shipments and keep rake and road movements on schedule.",
         email: "hr.logistics@balajitransports.com", // TODO: replace with real contact
-        phone: "9900909040", // TODO: replace with real contact
-        phoneDisplay: "+91 9900909040",
+        phone: "9900909038", // TODO: replace with real contact
+        phoneDisplay: "+91 9900909038",
         requirements: [
           {
             label: "Qualification",
@@ -329,8 +332,8 @@ const siteData = {
         summary:
           "Admin, accounts and customer-facing roles supporting our branches across Karnataka.",
         email: "hr.branchoffice@balajitransports.com", // TODO: replace with real contact
-        phone: "9900909041", // TODO: replace with real contact
-        phoneDisplay: "+91 9900909041",
+        phone: "8618132300", // TODO: replace with real contact
+        phoneDisplay: "+91 8618132300",
         requirements: [
           {
             label: "Qualification",
@@ -360,8 +363,8 @@ const siteData = {
         summary:
           "Mechanics and technicians for preventive maintenance, repairs and pre-trip inspections across our trailer and crane fleet.",
         email: "hr.maintenance@balajitransports.com", // TODO: replace with real contact
-        phone: "9900909042", // TODO: replace with real contact
-        phoneDisplay: "+91 9900909042",
+        phone: "9945265840", // TODO: replace with real contact
+        phoneDisplay: "+91 9945265840",
         requirements: [
           {
             label: "Vehicle Type",

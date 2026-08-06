@@ -1,7 +1,37 @@
+import { useEffect, useRef } from "react";
 import Reveal from "../Reveal";
 
-/** About — company description + vision/mission cards + route map image. */
+/** About — company description + vision/mission cards + route map video. */
 export default function About({ about }) {
+  const videoRef = useRef(null);
+
+  // Play the video only while the About section's video panel is on
+  // screen; pause it again once it scrolls out. Autoplaying only when
+  // visible (rather than on page load) keeps things lightweight and
+  // matches how the rest of the page reveals content on scroll.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return undefined;
+
+    const watcher = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {
+            // Autoplay can be blocked by the browser in rare cases;
+            // that's fine, the video simply stays paused until the
+            // user interacts with it.
+          });
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    watcher.observe(video);
+    return () => watcher.disconnect();
+  }, []);
+
   return (
     <section className="aboutParentNode" id="about">
       <div className="about__grid">
@@ -19,7 +49,15 @@ export default function About({ about }) {
         </Reveal>
 
         <Reveal className="about__mapWrap">
-          <img src={about.image} alt="Rail route map near Bengaluru" className="about__map" />
+          <video
+            ref={videoRef}
+            className="about__map"
+            src={about.video}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
         </Reveal>
       </div>
 
