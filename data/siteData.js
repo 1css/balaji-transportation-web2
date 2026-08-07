@@ -233,8 +233,8 @@ const siteData = {
       "We're always looking for reliable, hard-working people to join our team. Explore current openings below.",
     branch: "Tumkur — Karnataka",
     email: "balaji.branch@gmail.com",
-    whatsapp: "8310585629",
-    whatsappDisplay: "+91 8310585629",
+    whatsapp: "9900909038",
+    whatsappDisplay: "+91 9900909038",
     roles: [
       {
         slug: "drivers",
@@ -242,8 +242,8 @@ const siteData = {
         summary:
           "Licensed heavy-vehicle and trailer drivers for long-haul and intra-state steel logistics routes.",
         email: "hr.drivers@balajitransports.com", // TODO: replace with real contact
-        phone: "8310585629", // TODO: replace with real contact
-        phoneDisplay: "+91 8310585629",
+        phone: "9900909038", // TODO: replace with real contact
+        phoneDisplay: "+91 9900909038",
         requirements: [
           {
             label: "Vehicle Type",
@@ -273,8 +273,8 @@ const siteData = {
         summary:
           "Experienced operators for heavy cranes, hydra cranes and forklifts across our branches.",
         email: "hr.crane@balajitransports.com", // TODO: replace with real contact
-        phone: "9900909039", // TODO: replace with real contact
-        phoneDisplay: "+91 9900909039",
+        phone: "9900909038", // TODO: replace with real contact
+        phoneDisplay: "+91 9900909038",
         requirements: [
           {
             label: "Equipment Type",
@@ -332,8 +332,8 @@ const siteData = {
         summary:
           "Admin, accounts and customer-facing roles supporting our branches across Karnataka.",
         email: "hr.branchoffice@balajitransports.com", // TODO: replace with real contact
-        phone: "8618132300", // TODO: replace with real contact
-        phoneDisplay: "+91 8618132300",
+        phone: "9900909038", // TODO: replace with real contact
+        phoneDisplay: "+91 9900909038",
         requirements: [
           {
             label: "Qualification",
@@ -363,8 +363,8 @@ const siteData = {
         summary:
           "Mechanics and technicians for preventive maintenance, repairs and pre-trip inspections across our trailer and crane fleet.",
         email: "hr.maintenance@balajitransports.com", // TODO: replace with real contact
-        phone: "9945265840", // TODO: replace with real contact
-        phoneDisplay: "+91 9945265840",
+        phone: "9900909038", // TODO: replace with real contact
+        phoneDisplay: "+91 9900909038",
         requirements: [
           {
             label: "Vehicle Type",
