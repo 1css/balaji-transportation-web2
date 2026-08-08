@@ -241,7 +241,7 @@ const siteData = {
         title: "Drivers",
         summary:
           "Licensed heavy-vehicle and trailer drivers for long-haul and intra-state steel logistics routes.",
-        email: "hr.drivers@balajitransports.com", // TODO: replace with real contact
+        email: "balaji.branch@gmail.com", // TODO: replace with real contact
         phone: "9900909038", // TODO: replace with real contact
         phoneDisplay: "+91 9900909038",
         requirements: [
@@ -272,7 +272,7 @@ const siteData = {
         title: "Crane & Hydra Operators",
         summary:
           "Experienced operators for heavy cranes, hydra cranes and forklifts across our branches.",
-        email: "hr.crane@balajitransports.com", // TODO: replace with real contact
+        email: "balaji.branch@gmail.com", // TODO: replace with real contact
         phone: "9900909038", // TODO: replace with real contact
         phoneDisplay: "+91 9900909038",
         requirements: [
@@ -300,7 +300,7 @@ const siteData = {
         title: "Logistics & Dispatch",
         summary:
           "Coordinators to plan routes, track shipments and keep rake and road movements on schedule.",
-        email: "hr.logistics@balajitransports.com", // TODO: replace with real contact
+        email: "balaji.branch@gmail.com", // TODO: replace with real contact
         phone: "9900909038", // TODO: replace with real contact
         phoneDisplay: "+91 9900909038",
         requirements: [
@@ -331,7 +331,7 @@ const siteData = {
         title: "Branch & Office Staff",
         summary:
           "Admin, accounts and customer-facing roles supporting our branches across Karnataka.",
-        email: "hr.branchoffice@balajitransports.com", // TODO: replace with real contact
+        email: "balaji.branch@gmail.com", // TODO: replace with real contact
         phone: "9900909038", // TODO: replace with real contact
         phoneDisplay: "+91 9900909038",
         requirements: [
@@ -362,7 +362,7 @@ const siteData = {
         title: "Vehicle Maintenance",
         summary:
           "Mechanics and technicians for preventive maintenance, repairs and pre-trip inspections across our trailer and crane fleet.",
-        email: "hr.maintenance@balajitransports.com", // TODO: replace with real contact
+        email: "balaji.branch@gmail.com", // TODO: replace with real contact
         phone: "9900909038", // TODO: replace with real contact
         phoneDisplay: "+91 9900909038",
         requirements: [
